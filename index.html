@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light px-0">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" alt="" width="45" height="25"
+                            class="d-inline-block align-text-top">
+                        BLUESTOCK
+                    </a>
+                </div>
+            </nav>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="bignav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMMUNITY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MEDIA
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SUPPORT <i
+                                    class="fa-sharp fa-solid fa-arrow-left-long fa-rotate-by"
+                                    style="--fa-rotate-angle: 135deg;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIVE NEWS</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="signin_up">
+                <a class="nav-link nav-link-secondary  d-none d-lg-flex" id="signin" href="#">Sign in</a>
+                <button type="button" class="btn btn-primary btn-sm mr-4  d-none d-lg-flex" id="signup_button"
+                    style="background-color: #3F52FF;">Sign UP
+                    Now</button>
+
+
+                <button class="toggle-icon navbar border-0 padding-right-0 pr-1" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class=""><i class="fa-solid fa-grip-vertical fa-lg"></i></span>
+
+
+                </button>
+            </div>
+
+
+
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close mr-3 mb-1 mt-1" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="font-weight: 500; font-size: 0.8rem;">
+                    <ul class="navbar-nav justify-content-end flex-column">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Who we are?</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PRODUCTS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                TOOLS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SUPPORT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                OTHERS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+                    <a class="nav-link nav-link-secondary  d-none d-lg-flex pt-3" id="signin" href="#">Sign in</a>
+                    <hr style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary m-2 p-2 h-1rem" type="button">Sign Up</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+    </nav>
+
+
+    <!-- new app 2.0 -->
+    <div class="homesec d-md-flex mt-4 d-flex justify-content-between">
+        <div class="app my-lg-5 ">
+            <button type="button" class="btn btn-success" id="newbtn">NEW</button>
+            <a class="applink" style="color: black; justify-content: center;">App 2.0<i
+                    class="fa-sharp fa-solid fa-arrow-left-long fa-rotate-180 p-2"></i></i></a>
+            <br> <!-- Add this line break tag -->
+            <p class="apphead">
+                Free & Open <br>
+                Stock Market Learning <br>
+                For GenZ
+            </p>
+            <p class="line">
+                Thousands of traders and investors in India use our <br>
+                stable and reliable mobile app regularly.
+            </p>
+            <div class="search-by-number ">
+                <span class="access">Get early access</span>
+
+                <div class="send-btn shadow-lg px-2 py-0 bg-body rounded ">
+
+                    <form class="form-inline">
+                        <p class="country-code">+91</p>
+
+                        <input class="form-control mr-sm-0 pr-0 border-0" type="search"
+                            placeholder="Enter mobile number" aria-label="Search"
+                            style="width: 10rem; height: 2rem; font-size: 0.8rem; border: #EDF1FF; justify-content: center; align-items: center;">
+
+                        <button class="sendbutton btn  my-2 my-sm-0 p-0" type="submit" style="height: 2rem;">
+                            <i class="fa-solid fa-paper-plane" style="color: #3F52FF; height: 0.5rem;"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangle" style="background-color: #EDF1FF; border-radius:0.4rem;"></div>
+    </div>
+
+
+
+    <!-- growing india container -->
+    <div class="growind container mt-lg-5 mb-5 d-flex justify-content-between flex-wrap" id="growindia"
+        style="padding-left: 1rem; padding-right: 1rem; align-items: center;">
+        <div class="flex-grow-1 text-center text-md-left mb-md-0">
+            <p class="m-0" style="font-size: 0.7rem; color: #9A9A9A;">Built for a growing India.</p>
+            <div class="container p-0">
+                <p class="font-weight-bold m-0 animated-text" style="font-size: 1.8rem; ">
+                    It’s easy
+                </p>
+            </div>
+
+            <p class="m-0 animated-text" style="font-size: 1.6rem; font-weight: 700;">It’s powerful</p>
+            <p class="m-0 animated-text" style="font-size: 1.6rem; font-weight: 700;">
+                It’s beautiful</p>
+        </div>
+        <div class="text-center flex-grow-1">
+            <div class="growadjust">
+                <img src="../images/3d-hand-gesture-with-thumb-up.jpg" alt="yoy" style="height: 5rem; width: 5rem;">
+                <p class="mt-3" style="color: #595959;">We run<span class="font-weight-bold"> Billions </span>of
+                    computations
+                    <br>
+                    every second, to provide <br>
+                    <span class="font-weight-bold">lightning fast Backtesting,</span> <br>
+                    real time alerts and scanning.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- highlights section   -->
+    <div class="text-center mx-sm-2">
+        <div class="highlights">
+            <p class="power-para m-0">Power-packed with
+                everything you need.</p>
+
+            <p class="bold">Bluestock Highlights</p>
+
+            <p class="simpli-para">Simplified enough for beginners, Detailed enough for experts.
+                <br>
+                Track upcoming IPOs, Leverage advanced tools to <br>
+                make the best decisions.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- learn-cards section  -->
+    <div class="learn-card-container">
+        <div class="learn-card learn-card-1">
+            <div class="learn-card-title" style="color: #0013F4; font-weight: 600;">Learn Chart<span
+                    class="material-icons" style="float: right;"> <i class="fa-solid fa-pencil"
+                        style="color: #0013f4;"></i></span></div>
+            <hr style="margin-top: 0; margin-bottom: 10px; margin-left: 20px; margin-right: 20px;">
+            <!-- Add this line -->
+            <div class="learn-card-content">
+                <div class="point"><span>1</span>Technical, Fundamental</div>
+                <div class="point"><span>2</span>Finology, Facts, Equity</div>
+                <div class="point"><span>3</span>Trading Psychology</div>
+                <div class="point"><span>4</span>Risk Assessment</div>
+                <div class="point"><span>5</span>Option Trading</div>
+
+            </div>
+        </div>
+        <div class="learn-card learn-card-2">
+            <div class="learn-card-title" style="color: #0013F4; font-weight: 600;">Analytics<span
+                    class="material-icons" style="float: right;"> <i class="fa-regular fa-paper-plane"
+                        style="color: #0013f4;"></i></span></div>
+            <hr style="margin-top: 0; margin-bottom: 10px; margin-left: 20px; margin-right: 20px;">
+            <!-- Add this line -->
+
+            <div class="learn-card-content">
+                <div class="point"><span>1</span>Live Sector Trend</div>
+                <div class="point"><span>2</span>IPO DRHP</div>
+                <div class="point"><span>3</span>Sectoral Distribution</div>
+                <div class="point"><span>4</span>Stock Overview</div>
+                <div class="point"><span>5</span>TradingView Chart</div>
+                <div class="point"><span>6</span>Technical, Fundamental</div>
+            </div>
+        </div>
+        <div class="learn-card learn-card-3">
+            <div class="learn-card-title" style="color: #0013F4; font-weight: 600;">Club<span class="material-icons"
+                    style="float: right;"> <i class="fa-solid fa-bolt" style="color: #0013f4;"></i></span></div>
+            <hr style="margin-top: 0; margin-bottom: 10px; margin-left: 20px; margin-right: 20px;">
+            <!-- Add this line -->
+
+            <div class="learn-card-content">
+                <div class="point"><span>1</span>Educational Resources</div>
+                <div class="point"><span>2</span>Real-time Chat</div>
+
+                <div class="point"><span>3</span>Forums</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- adarsh -->
+
+    <div class="traders-love">
+
+
+        <div class="trad-1">
+            <div class="trad-text">
+                <p class="trad-head">Why do traders love bluestock?</p>
+                <div class="trad-body">
+                    <p>Bluestock caters to traders looking to enhance <br>
+                        their technical analysis skills, providing a user-friendly <br>
+                        environment to interpret and leverage charts effectively <br>
+                        for strategic decision-making in the financial markets.</p>
+                </div>
+            </div>
+
+            <img class="trad-img" src="./images/Picture 1.png" alt="">
+
+        </div>
+
+
+        <div class="trad-2">
+
+            <div class="trad-icons">
+                <div class="icon-1">
+                    <img class="analytics" src="./images/analytics.png" alt=""
+                        style="height: 100%; width: 100%; object-fit: contain;">
+                    <p class="analytics-text">Analytics</p>
+                </div>
+                <div class="icon-2">
+                    <img class="blogs" src="./images/blogs.png" alt=""
+                        style="height: 100%; width: 100%; object-fit: contain;">
+                    <p class="blogs-text">Blogs</p>
+                </div>
+                <div class="icon-3">
+                    <img class="videos" src="./images/videos.png" alt=""
+                        style="height: 100%; width: 100%; object-fit: contain;">
+                    <p class="videos-text">Videos</p>
+                </div>
+            </div>
+
+
+
+            <div class="resources">
+                <div class="reso" style="background-color: #34F3C3;">Resources</div>
+                <div>
+                    <p class="reso-head">All things finance, right here
+                    </p>
+
+                    <div class="reso-body">
+                        <p>
+                            Master the art of investing and secure your financial future <br>
+                            with Bluestock learning resources.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="mob-resources">
+
+        <div class="v-onthego">
+
+            <div class="v-mob-reso">
+                <div class="v-m-reso">
+                    <p class="m-0 v-m-reso-btn-txt">Resources</p>
+                </div>
+            </div>
+
+            <div class="v-on-title">
+                <p class="m-0 onthego">On The Go</p>
+            </div>
+
+            <div class="v-on-body">
+                <p>
+                    We believe that everyone should be <br>
+                    able to wield technology while learn <br>
+                    trading. Use Bluestock on the go, on <br>
+                    your mobile device. Experience the <br>
+                    ultimate trading experience on <br>
+                    Android or IOS.
+                </p>
+            </div>
+
+
+            <div class="v-scancode">
+                <div class="v-code">
+                    <img src="./images/scancode.png" alt="scan">
+                </div>
+
+                <div class="v-scan">
+                    <a class="v-scan-title" href="" style="color: #0013F4;">Scan and Download</a>
+
+                    <p class="v-scan-text">Use your android device <br>
+                        to download the app</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="v-trad-icons">
+            <div class="v-icon-1">
+                <img class="v-analytics" src="./images/analytics.png" alt=""
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <p class="v-analytics-text">Analytics</p>
+            </div>
+            <div class="v-icon-2">
+                <img class="v-blogs" src="./images/blogs.png" alt=""
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <p class="v-blogs-text">Blogs</p>
+            </div>
+            <div class="v-icon-3">
+                <img class="v-videos" src="./images/videos.png" alt=""
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <p class="v-videos-text">Videos</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="v-mobile-img">
+        <div>
+            <img class="v-m-img" src="./images/s20.png" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- full screen view -->
+    <div class="onthego_image">
+        <div class="onthego">
+
+            <div class="on-title">
+                <p class="m-0">On The Go</p>
+            </div>
+
+            <div class="on-body">
+                <p>
+                    We believe that everyone should be able to wield technology <br>
+                    while learn trading. Use Bluestock on the go, on your mobile <br>
+                    device. Experience the ultimate trading experience on <br>
+                    Android or IOS.
+                </p>
+            </div>
+
+
+            <div class="scancode">
+                <div class="code">
+                    <img src="./images/verify.png" alt="scan">
+                </div>
+
+                <div class="scan">
+                    <a href="">Scan and Download</a>
+
+                    <p class="scan-text">Use your android device <br>
+                        to download the app</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mobile-img">
+            <img class="mobile-image ml-0" src="./images/s20.png" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- live section -->
+    <div class="live-section">
+        <div class="live-bluestock">
+            <p class="live-para m-0"> <span class="live-app">Bluestock App 2.0 </span>
+            <p class="is-live ">is Live Now!</p>
+            </p>
+
+            <p class="live-download">Download Our App</p>
+        </div>
+
+        <div class="download-img">
+            <a href=""><img class="google-play" src="./images/google play download bar.png" alt=""></a>
+            <a href=""><img class="app-store" src="./images/app store download bar.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Abhimanyu -->
+    <!-- <section class="rev_img_star">
+        <div class="review_img">
+            <img class="review_img_icon1" src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
+                alt="">
+            <img class="review_img_icon2" src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
+                alt="">
+            <img class="review_img_icon3" src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
+                alt="">
+            <img class="review_img_icon4" src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg"
+                alt="">
+        </div>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p class="text_star">(5/5 by 100+ users)</p>
+        </div>
+
+    </section> -->
+    <section class="rev_img_star">
+        <div class="review_box">
+            <div class="review_img">
+                <img class="review_img_icon1"
+                    src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg" alt="">
+                <img class="review_img_icon2"
+                    src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg" alt="">
+                <img class="review_img_icon3"
+                    src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg" alt="">
+                <img class="review_img_icon4"
+                    src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg" alt="">
+            </div>
+            <div class="stars">
+                <div class="star_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="star_text">
+                    <p class="text_star">(5/5 by 100+ users)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="review_head">
+        <p class="cards_heading">What do our users say?</p>
+    </section>
+
+    <section class="sli">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content" id="cardContainer">
+                <!-- Card template will be dynamically generated here -->
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <section class="table_head">
+        <h1 class="market_mover_head">Market Movers</h1>
+        <p class="table_para">Learn about Stock market updates today - 52 Week Highs, 52 week Lows and more.</p>
+        <div class="containing_tables">
+
+            <div class="table_1">
+                <div class="table_top1">
+                    <div class="cal_icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h5 class="table_top1_head">52 Week High</h5>
+                    <div class="high-low-buttons">
+                        <button id="highButton" class="underline">NSE</button>
+                        <!-- class="underline" is added so that when page loads high should be underlined -->
+                        <button id="lowButton">BSE</button>
+                    </div>
+                </div>
+                <div class="table_top2">
+                    <table id="table1">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Price</th>
+                                <th>Day High</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button id="showMoreBtn1" class="view-more-btn">View All 52 Week High</button>
+                </div>
+            </div>
+
+            <div class="table_2">
+                <div class="table_top1">
+                    <div class="sort_icon">
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <h5 class="table_top1_head">52 Week Low</h5>
+                    <div class="gainer-loser-buttons">
+                        <button id="gainerButton" class="underline">NSE</button>
+                        <button id="loserButton">BSE</button>
+                    </div>
+                </div>
+                <div class="table_top2">
+                    <table id="table2">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Price</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button id="showMoreBtn2" class="view-more-btn">View All 52 Week Low</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="compare_section">
+        <div class="compare_text">
+            <p class="compare_head1">Compare and choose</p>
+            <p class="compare_head2">Best Stock Broker for you</p>
+        </div>
+        <!-- <div class="compare_layout">
+            <img class="compare_layout_img" src="Rectangle 4343.png" alt="angel"> -->
+        <div class="compare_broker">
+            <div class="combine_compare">
+                <div class="compare">
+                    <div class="compare_angel">
+                        <img class="angel_img" src="../images/Rectangle 4341.png" alt="angel">
+                        <p class="angel_head">Angel One</p>
+                        <div class="drop_down_icon">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                    <div class="compare_zerodha">
+                        <img class="angel_img" src="../images/Rectangle 4342.png" alt="angel">
+                        <p class="zerodha_head">Zerodha</p>
+                        <div class="drop_down_icon_zerodha">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="compare_btn">
+                    <button class="btn_compare">Compare</button>
+                </div>
+            </div>
+            <div class="compare_img">
+                <img class="image_compare" src="../images/Rectangle 4343.png" alt="compareImg">
+            </div>
+        </div>
+        <!-- </div> -->
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/44b6757bf6.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
